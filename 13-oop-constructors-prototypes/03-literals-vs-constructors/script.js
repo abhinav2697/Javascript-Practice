@@ -34,3 +34,18 @@ const arrObj = new Array(1, 2, 3, 4, 5);
 
 console.log(arrLit, typeof arrLit);
 console.log(arrObj, typeof arrObj);
+
+
+const funcList = function (x) {
+    return x * x;
+}
+
+console.log(funcList, typeof funcList);
+console.log(funcLit(5));
+const funcObj = new Function('x', 'return x*x');
+console.log(funcObj(3));
+
+const obj1 = {}
+const obj2 = new Object();
+console.log(obj1, typeof obj1);
+console.log(obj2, typeof obj2);
